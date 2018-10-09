@@ -123,73 +123,74 @@
 
 .section3 {
   position: relative; }
-  .section3 .bgred {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 25px;
-    color: #fff;
+  .section3 .main-container {
     background: #f26532; }
-    .section3 .bgred .content {
-      visibility: visible;
-      animation-delay: 0.2s;
-      animation-name: fadeInLeft;
-      animation-duration: 2s; }
-      .section3 .bgred .content .business-title {
-        float: left;
-        width: calc(100% - 1200px);
-        width: -webkit-calc(100% - 1200px); }
-        .section3 .bgred .content .business-title h2 {
-          padding-bottom: 14px;
-          vertical-align: top;
-          font-size: 22px;
-          color: #fff;
-          border-bottom: 1px solid #e5e5e5; }
-        .section3 .bgred .content .business-title p {
-          margin-top: 20px;
-          font-size: 14px;
-          color: #fff;
-          line-height: 1.5; }
-      .section3 .bgred .content .business-items {
-        position: relative;
-        display: inline-block;
-        width: 1175px;
-        padding-right: 15px;
-        padding-left: 15px;
-        vertical-align: top; }
-        .section3 .bgred .content .business-items li {
+    .section3 .main-container .bgred {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      padding-left: 25px;
+      color: #fff; }
+      .section3 .main-container .bgred .content {
+        visibility: visible;
+        animation-delay: 0.2s;
+        animation-name: fadeInLeft;
+        animation-duration: 2s; }
+        .section3 .main-container .bgred .content .business-title {
           float: left;
-          width: 25%;
-          padding-top: 38px;
+          width: calc(100% - 1200px);
+          width: -webkit-calc(100% - 1200px); }
+          .section3 .main-container .bgred .content .business-title h2 {
+            padding-bottom: 14px;
+            vertical-align: top;
+            font-size: 24px;
+            color: #fff;
+            border-bottom: 1px solid #e5e5e5; }
+          .section3 .main-container .bgred .content .business-title p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #fff;
+            line-height: 1.5;
+            padding: 0 20px; }
+        .section3 .main-container .bgred .content .business-items {
+          position: relative;
+          display: inline-block;
+          width: 1175px;
           padding-right: 15px;
           padding-left: 15px;
-          font-family: '微软雅黑'; }
-          .section3 .bgred .content .business-items li .item {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            -webkit-transition: all .3s ease 0s;
-            -moz-transition: all .3s ease 0s;
-            -ms-transition: all .3s ease 0s;
-            -o-transition: all .3s ease 0s;
-            transition: all .3s ease 0s;
-            border-top: 1px solid #fff; }
-            .section3 .bgred .content .business-items li .item .left span {
-              display: block;
-              font-size: 24px;
-              color: #fff; }
-            .section3 .bgred .content .business-items li .item .img {
-              position: relative;
-              height: 55px;
-              margin-top: 35px; }
-              .section3 .bgred .content .business-items li .item .img img {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                -webkit-transition: all .3s ease 0s;
-                -moz-transition: all .3s ease 0s;
-                -ms-transition: all .3s ease 0s;
-                -o-transition: all .3s ease 0s;
-                transition: all .3s ease 0s;
-                width: 80%; }
+          vertical-align: top; }
+          .section3 .main-container .bgred .content .business-items li {
+            float: left;
+            width: 25%;
+            padding-top: 38px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-family: '微软雅黑'; }
+            .section3 .main-container .bgred .content .business-items li .item {
+              padding-top: 30px;
+              -webkit-transition: all .3s ease 0s;
+              -moz-transition: all .3s ease 0s;
+              -ms-transition: all .3s ease 0s;
+              -o-transition: all .3s ease 0s;
+              transition: all .3s ease 0s;
+              border-top: 1px solid #fff;
+              cursor: pointer; }
+              .section3 .main-container .bgred .content .business-items li .item .left span {
+                display: block;
+                font-size: 24px;
+                color: #fff; }
+              .section3 .main-container .bgred .content .business-items li .item .img {
+                position: relative;
+                height: 55px;
+                margin-top: 65px; }
+                .section3 .main-container .bgred .content .business-items li .item .img img {
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  -webkit-transition: all .3s ease 0s;
+                  -moz-transition: all .3s ease 0s;
+                  -ms-transition: all .3s ease 0s;
+                  -o-transition: all .3s ease 0s;
+                  transition: all .3s ease 0s; }
 
 .section4 {
   position: relative; }
@@ -197,9 +198,26 @@
     height: 630px; }
     .section4 .bgwhite .content-items {
       background: url("../images/liandian_38.png") no-repeat center;
-      height: 535px; }
+      background-size: 80%;
+      height: 535px;
+      position: relative; }
       .section4 .bgwhite .content-items .item {
-        position: relative; }
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .section4 .bgwhite .content-items .leftside {
+        border-left: 300px solid #f26532;
+        border-top: 170px solid #000;
+        border-bottom: 170px solid gray;
+        border-right: 300px solid;
+        width: 0;
+        height: 0;
+        position: relative;
+        content: ''; }
 
 @keyframes mymove0 {
   0% {
