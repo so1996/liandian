@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html, body {
+  animation: all 1s ease; }
+
 .main-container {
   position: relative;
   max-width: 1600px;
@@ -27,7 +30,9 @@
     position: absolute;
     top: 41%;
     left: 60%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    transition: all 1s ease;
+    opacity: 1; }
     .section1 .bg-txt img {
       width: 80%; }
   .section1 .head .logo {
@@ -72,6 +77,7 @@
     height: 84px;
     top: -105px;
     left: 50%;
+    z-index: 10;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -125,29 +131,25 @@
             left: 31%;
             z-index: 2;
             width: 70%;
-            animation: rc2 1.5s ease; }
+            transform: translate3d(200%, 200%, 0); }
           .section2 .bg-white .found-fl .scope .slick-track .buildimg .im3 {
             top: 0;
             left: 5%;
             width: 85%;
             z-index: 1;
-            animation: rc3 1s ease; }
+            transform: translate3d(-200%, 100%, 0); }
           .section2 .bg-white .found-fl .scope .slick-track .buildimg .im4 {
             z-index: 3;
-            transform: scale(0);
-            animation: rc4 1s ease 1s forwards; }
+            transform: scale(0); }
           .section2 .bg-white .found-fl .scope .slick-track .buildimg .im5 {
             z-index: 3;
-            transform: scale(0);
-            animation: rc5 1s ease 1s forwards; }
+            transform: scale(0); }
           .section2 .bg-white .found-fl .scope .slick-track .buildimg .im6 {
             z-index: 3;
-            transform: scale(0);
-            animation: rc6 1.5s ease 1s forwards; }
+            transform: scale(0); }
           .section2 .bg-white .found-fl .scope .slick-track .buildimg .im7 {
             z-index: 3;
-            transform: scale(0);
-            animation: rc7 0.8s ease 1s forwards; }
+            transform: scale(0); }
     .section2 .bg-white .found-fr {
       float: right;
       width: 41.8%;
@@ -155,6 +157,8 @@
       background: #fbfbfb; }
       .section2 .bg-white .found-fr img {
         vertical-align: initial; }
+      .section2 .bg-white .found-fr .al_text {
+        transform: translateY(200%); }
       .section2 .bg-white .found-fr .bulidslick {
         height: 580px;
         padding-left: 90px;
@@ -234,10 +238,7 @@
       padding-left: 25px;
       color: #fff; }
       .section3 .main-container .bgred .content {
-        visibility: visible;
-        animation-delay: 0.2s;
-        animation-name: fadeInLeft;
-        animation-duration: 2s; }
+        visibility: visible; }
         .section3 .main-container .bgred .content .business-title {
           float: left;
           width: calc(100% - 1200px);
@@ -295,6 +296,22 @@
                   -ms-transition: all .3s ease 0s;
                   -o-transition: all .3s ease 0s;
                   transition: all .3s ease 0s; }
+        .section3 .main-container .bgred .content .yw0 {
+          transform: translateY(400%); }
+        .section3 .main-container .bgred .content .yw1 {
+          transform: translateY(300%); }
+        .section3 .main-container .bgred .content .yw2 {
+          transform: translateY(300%); }
+        .section3 .main-container .bgred .content .yw3 {
+          transform: translateY(300%); }
+        .section3 .main-container .bgred .content .yw4 {
+          transform: translateY(300%); }
+        .section3 .main-container .bgred .content .yw5 {
+          transform: translateY(200%); }
+        .section3 .main-container .bgred .content .yw6 {
+          transform: translateY(200%); }
+        .section3 .main-container .bgred .content .yw7 {
+          transform: translateY(200%); }
 
 .section4 {
   position: relative; }
@@ -490,6 +507,11 @@ footer {
     top: 78%;
     left: 7%;
     transform: scale(1); } }
+@keyframes al {
+  0% {
+    transform: translateY(200%); }
+  100% {
+    transform: translateY(0); } }
 @keyframes xz0 {
   0% {
     transform: translateX(-200%); }
@@ -499,22 +521,62 @@ footer {
   0% {
     transform: translateX(400%) rotateZ(360deg); }
   100% {
-    transform: translateX(0) rotateZ(0); } }
+    transform: translateX(0) rotateZ(0deg); } }
 @keyframes xz2 {
   0% {
     transform: translateX(300%) rotateZ(300deg); }
   100% {
-    transform: translateX(0) rotateZ(0); } }
+    transform: translateX(0) rotateZ(0deg); } }
 @keyframes xz3 {
   0% {
     transform: translateX(200%) rotateZ(240deg); }
   100% {
-    transform: translateX(0) rotateZ(0); } }
+    transform: translateX(0) rotateZ(0deg); } }
 @keyframes xz4 {
   0% {
     transform: translateX(100%) rotateZ(180deg); }
   100% {
-    transform: translateX(0) rotateZ(0); } }
+    transform: translateX(0) rotateZ(0deg); } }
+@keyframes yw0 {
+  0% {
+    transform: translateY(300%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes yw1 {
+  0% {
+    transform: translateY(300%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes yw2 {
+  0% {
+    transform: translateY(300%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes yw3 {
+  0% {
+    transform: translateY(300%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes yw4 {
+  0% {
+    transform: translateY(300%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes yw5 {
+  0% {
+    transform: translateY(200%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes yw6 {
+  0% {
+    transform: translateY(200%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes yw7 {
+  0% {
+    transform: translateY(200%); }
+  100% {
+    transform: translateY(0); } }
 .shake_animate:hover {
   color: #f26532 !important; }
 
@@ -526,9 +588,9 @@ footer {
   color: #f26532 !important; }
 
 .upset .im2 {
-  animation: rc2 1.5s ease; }
+  animation: rc2 1.5s ease forwards; }
 .upset .im3 {
-  animation: rc3 1s ease; }
+  animation: rc3 1s ease forwards; }
 .upset .im4 {
   animation: rc4 1s ease 1s forwards; }
 .upset .im5 {
@@ -537,6 +599,8 @@ footer {
   animation: rc6 1.5s ease 1s forwards; }
 .upset .im7 {
   animation: rc7 0.8s ease 1s forwards; }
+.upset .al_text {
+  animation: al 1s ease forwards; }
 .upset .leftside {
   animation: xz0 0.8s ease forwards; }
 .upset .ct-1 {
@@ -550,18 +614,18 @@ footer {
 .upset .yw0 {
   animation: yw0 1s ease forwards; }
 .upset .yw1 {
-  animation: yw1 1s ease forwards; }
+  animation: yw1 1s ease 0.2s forwards; }
 .upset .yw2 {
-  animation: yw2 1s ease forwards; }
+  animation: yw2 1s ease 0.4s forwards; }
 .upset .yw3 {
-  animation: yw3 1s ease forwards; }
+  animation: yw3 1s ease 0.6s forwards; }
 .upset .yw4 {
-  animation: yw4 1s ease forwards; }
+  animation: yw4 1s ease 0.8s forwards; }
 .upset .yw5 {
-  animation: yw5 1s ease forwards; }
+  animation: yw5 1s ease 1s forwards; }
 .upset .yw6 {
-  animation: yw6 1s ease forwards; }
+  animation: yw6 1s ease 1.2s forwards; }
 .upset .yw7 {
-  animation: yw7 1s ease forwards; }
+  animation: yw7 1s ease 1.4s forwards; }
 
 /*# sourceMappingURL=basisStyle.css.map */
