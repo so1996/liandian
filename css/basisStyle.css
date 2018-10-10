@@ -5,7 +5,6 @@ html, body {
 .main-container {
   position: relative;
   max-width: 1600px;
-  padding-left: 55px;
   background: #fff; }
 
 .section1 {
@@ -16,14 +15,21 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
+    height: 974px;
     width: 100%;
     z-index: -1; }
     .section1 .bg-img .bg-img-direct {
-      width: 100%; }
-    .section1 .bg-img .bg-img-veil {
-      width: 100%;
+      width: auto;
+      display: block;
       position: absolute;
-      bottom: 0; }
+      left: 50%;
+      transform: translate(-50%, 0); }
+    .section1 .bg-img .bg-img-veil {
+      width: auto;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 340px); }
   .section1 .bg-txt {
     width: 450px;
     height: 410px;
@@ -34,7 +40,7 @@ html, body {
     transition: all 0.5s ease;
     opacity: 0; }
     .section1 .bg-txt img {
-      width: 80%; }
+      width: auto; }
   .section1 .head {
     position: fixed;
     top: 0;
@@ -244,7 +250,7 @@ html, body {
     .section3 .main-container .bgred {
       padding-top: 70px;
       padding-bottom: 70px;
-      padding-left: 25px;
+      padding-left: 80px;
       color: #fff; }
       .section3 .main-container .bgred .content {
         visibility: visible; }
@@ -325,7 +331,8 @@ html, body {
 .section4 {
   position: relative; }
   .section4 .bgwhite {
-    height: 630px; }
+    height: 630px;
+    padding-left: 55px; }
     .section4 .bgwhite .content-items {
       background: url("../images/liandian_38.png") no-repeat center;
       background-size: 90%;

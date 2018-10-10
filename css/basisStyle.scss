@@ -7,7 +7,6 @@ html,body {
 .main-container {
   position: relative;
   max-width: 1600px;
-  padding-left: 55px;
   background: #fff;
 }
 
@@ -20,16 +19,23 @@ html,body {
     position: fixed;
     top: 0;
     left: 0;
+    height: 974px;
     width: 100%;
     z-index: -1;
 
     .bg-img-direct {
-      width: 100%;
+      width: auto;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
     }
     .bg-img-veil {
-      width: 100%;
+      width: auto;
       position: absolute;
       bottom: 0;
+      left: 50%;
+      transform: translate(-50%,340px);
     }
   }
 
@@ -44,7 +50,7 @@ html,body {
     opacity: 0;
 
     img {
-      width: 80%;
+      width: auto;
     }
   }
 
@@ -328,7 +334,7 @@ html,body {
     .bgred {
       padding-top: 70px;
       padding-bottom: 70px;
-      padding-left: 25px;
+      padding-left: 80px;
       color: #fff;
 
       .content {
@@ -444,6 +450,7 @@ html,body {
 
   .bgwhite {
     height: 630px;
+    padding-left: 55px;
 
     .content-items {
       background: url("../images/liandian_38.png") no-repeat center;

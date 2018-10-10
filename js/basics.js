@@ -76,6 +76,6 @@
         $('html,body').animate({scrollTop: '500px'}, 1000);
     })
 
-    $(".bg-txt").css({transform:"translateY(-50%)"});
+    $(".bg-txt").css({transform:"translateY(-40%)"});
 
 })($);
