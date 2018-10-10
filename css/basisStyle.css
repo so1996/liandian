@@ -30,43 +30,52 @@ html, body {
     position: absolute;
     top: 41%;
     left: 60%;
-    transform: translateY(-50%);
-    transition: all 1s ease;
-    opacity: 1; }
+    transform: translateY(200%);
+    transition: all 0.5s ease;
+    opacity: 0; }
     .section1 .bg-txt img {
       width: 80%; }
-  .section1 .head .logo {
-    float: left;
-    height: 0.8rem;
-    display: flex;
-    align-items: flex-end; }
-    .section1 .head .logo h1 {
-      position: absolute;
-      top: 0;
-      text-indent: -9999px; }
-    .section1 .head .logo a {
-      position: relative;
-      display: block;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
-      .section1 .head .logo a img {
-        width: 80%; }
-  .section1 .head .nav {
-    height: auto;
-    float: right; }
-    .section1 .head .nav li {
+  .section1 .head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 1s ease; }
+    .section1 .head .logo {
       float: left;
       height: 0.8rem;
       display: flex;
-      align-items: flex-end; }
-      .section1 .head .nav li a {
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 12px;
-        color: #000;
-        font-size: 20px; }
-        .section1 .head .nav li a:hover {
-          color: #f26532; }
+      align-items: flex-end;
+      transition: all 1s ease; }
+      .section1 .head .logo h1 {
+        position: absolute;
+        top: 0;
+        text-indent: -9999px; }
+      .section1 .head .logo a {
+        position: relative;
+        display: block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        .section1 .head .logo a img {
+          width: 80%; }
+    .section1 .head .nav {
+      height: auto;
+      float: right; }
+      .section1 .head .nav li {
+        float: left;
+        height: 0.8rem;
+        display: flex;
+        align-items: flex-end;
+        transition: all 1s ease; }
+        .section1 .head .nav li a {
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-bottom: 12px;
+          color: #000;
+          font-size: 20px; }
+          .section1 .head .nav li a:hover {
+            color: #f26532; }
 
 .section2 {
   position: relative; }

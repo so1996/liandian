@@ -39,9 +39,9 @@ html,body {
     position: absolute;
     top: 41%;
     left: 60%;
-    transform: translateY(-50%);
-    transition: all 1s ease;
-    opacity: 1;
+    transform: translateY(200%);
+    transition: all 0.5s ease;
+    opacity: 0;
 
     img {
       width: 80%;
@@ -49,11 +49,19 @@ html,body {
   }
 
   .head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 1s ease;
+
     .logo {
       float: left;
       height: 0.8rem;
       display: flex;
       align-items: flex-end;
+      transition: all 1s ease;
       h1 {
         position: absolute;
         top: 0;
@@ -79,6 +87,7 @@ html,body {
         height: 0.8rem;
         display: flex;
         align-items: flex-end;
+        transition: all 1s ease;
 
         a {
           padding-left: 12px;

@@ -49,13 +49,21 @@
         }
         if (windowScroll > 100) {
             start_animate.hide();
-            $(".bg-txt").css("opacity", 0);
         } else {
             start_animate.show();
-            $(".bg-txt").css("opacity", 1);
         }
 
-
+        if (windowScroll > 20) {
+            $(".bg-txt").css({opacity:0});
+            $(".head").css({background:"rgba(255,255,255,0.5)",});
+            $(".head li").css("height","0.6rem");
+            $(".head .logo").css("height","0.6rem")
+        } else {
+            $(".bg-txt").css({opacity:1});
+            $(".head").css({background:"rgba(255,255,255,0)"});
+            $(".head li").css("height","0.8rem");
+            $(".head .logo").css("height","0.8rem")
+        }
     }
 
     startAnimate();
@@ -67,5 +75,7 @@
     start_animate.on("click", function () {
         $('html,body').animate({scrollTop: '300px'}, 1000);
     })
+
+    $(".bg-txt").css({transform:"translateY(-50%)"});
 
 })($);
