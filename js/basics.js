@@ -73,7 +73,7 @@
     });
 
     start_animate.on("click", function () {
-        $('html,body').animate({scrollTop: '300px'}, 1000);
+        $('html,body').animate({scrollTop: '500px'}, 1000);
     })
 
     $(".bg-txt").css({transform:"translateY(-50%)"});
