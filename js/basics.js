@@ -49,8 +49,10 @@
         }
         if (windowScroll > 100) {
             start_animate.hide();
+            $(".g_senav").css({transform: "translate(0, -50%)"});
         } else {
             start_animate.show();
+            $(".g_senav").css({transform: "translate(100%, -50%)"});
         }
 
         if (windowScroll > 20) {
