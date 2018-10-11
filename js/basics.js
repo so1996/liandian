@@ -76,8 +76,12 @@
 
     start_animate.on("click", function () {
         $('html,body').animate({scrollTop: '500px'}, 1000);
-    })
+    });
 
     $(".bg-txt").css({transform:"translateY(-40%)"});
+
+    $(".g_senitmtop").click(function(){
+        $('html,body').animate({scrollTop: "0px"}, 1000);
+    });
 
 })($);
